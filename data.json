@@ -1,0 +1,24 @@
+[
+    {
+        "fieldname": "Service",    
+        "designation": "Receptionist",
+        "salary": "100000"
+    },
+    {
+        "fieldname": "Service",    
+        "designation": "Manager",
+        "salary": "500000000"
+    },{
+        "fieldname": "Labour",    
+        "designation": "Labourer",
+        "salary": "2600000"
+    },{
+        "fieldname": "Service",    
+        "designation": "Accountant",
+        "salary": "200000"
+    },{
+        "fieldname": "Business",    
+        "designation": "Tea Vendor",
+        "salary": "30000000000"
+    }
+]

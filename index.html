@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Html CRUD with Pure JavaScript</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td>
+          <form
+            onsubmit="event.preventDefault();onFormSubmit();"
+            autocomplete="off"
+            id="tab-one"
+          >
+            <div>
+              <label>Field Name*</label
+              ><label class="validation-error hide" id="fieldNameValidationError"
+                >This field is required.</label
+              >
+              <input type="text" name="fieldname" id="fieldname" />
+            </div>
+            <div>
+              <label>Designation</label>
+              <input type="text" name="designation" id="designation" />
+            </div>
+            <div>
+              <label>Salary</label>
+              <input type="text" name="salary" id="salary" />
+            </div>
+            <!-- <div>
+                        <label>City</label>
+                        <input type="text" name="city" id="city">
+                    </div> -->
+            <div class="form-action-buttons">
+              <input type="submit" value="Submit" id="submit" />
+            </div>
+          </form>
+        </td>
+        <td>
+          <p>
+            Type something below to search the table for field name,designation or
+            salary:
+          </p>
+          <input id="myInput" type="text" placeholder="Search.." />
+          <br /><br />
+          <table class="list" id="employeeList">
+            <thead>
+              <tr>
+                <th>Field Name</th>
+                <th>Designation</th>
+                <th>Salary</th>
+                <!-- <th>City</th> -->
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <br />
+    <button type="button" id="formButton">Add new Record</button>
+    <script src="script.js"></script>
+  </body>
+</html>
